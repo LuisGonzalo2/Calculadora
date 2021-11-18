@@ -42,5 +42,36 @@ namespace Calculadora_Multifuncion
         {
             Console.WriteLine("No existe esa opcion");
         }
+        public void generalmenu()
+        {
+            //menu General
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("Elije lo que deseas Calcular");
+            Console.WriteLine("1. Radio");
+            Console.WriteLine("2. IVA");
+            Console.WriteLine("3. Basico");
+            Console.WriteLine("4. Porcentaje");
+            Console.WriteLine("---------------------------");
+        }
+
+        //-------------------------------------------------------------------------
+        //Porcentajes
+        public void menuPorcentaje()
+        {
+            Console.WriteLine("------------------");
+            Console.WriteLine("Menu de Porcentaje");
+            Console.WriteLine("Ingrese el valor");
+            Console.WriteLine("------------------");
+        }
+
+        public void mensaje2Porcentaje()
+        {
+            Console.WriteLine("Ingresa el porcentaje que deseas calcular");
+        }
+        public string mensajeResultadoPorcentaje(double valor)
+        {
+            Console.WriteLine("El valor total es " + valor);
+            return "";
+        }
     }
 }

@@ -50,6 +50,9 @@
     <Compile Include="CBasico\Resta.cs" />
     <Compile Include="CBasico\Suma.cs" />
     <Compile Include="MensajesMenuGeneral.cs" />
+    <Compile Include="Opciones.cs" />
+    <Compile Include="PorcentajeOperacion.cs" />
+    <Compile Include="PorcentajePedirValor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

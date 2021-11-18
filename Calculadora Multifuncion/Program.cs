@@ -11,9 +11,9 @@ namespace Calculadora_Multifuncion
         static void Main(string[] args)
         {
             MensajesMenuGeneral mostrar = new MensajesMenuGeneral();
-            mostrar.menuBasico();
-            OpcionesMenuBasico elejir = new OpcionesMenuBasico();
-            elejir.Opcion();
+            mostrar.generalmenu();
+            Opciones elejir = new Opciones();
+            elejir.pedirOpcion();
             Console.ReadKey();
         }
     }

@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CBasico\OpcionesMenuBasico.cs" />
+    <Compile Include="CBasico\PedirOperarValoresBasicos.cs" />
+    <Compile Include="CBasico\Suma.cs" />
     <Compile Include="MensajesMenuGeneral.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

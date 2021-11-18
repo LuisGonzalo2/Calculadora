@@ -18,7 +18,7 @@ namespace Calculadora_Multifuncion
             int select = int.Parse(num);
             if (select == 1)
             {
-
+                Suma sumar = new Suma();
             }
             if (select == 2)
             {

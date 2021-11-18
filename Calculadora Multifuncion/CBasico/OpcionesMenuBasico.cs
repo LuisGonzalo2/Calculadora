@@ -22,7 +22,7 @@ namespace Calculadora_Multifuncion
             }
             if (select == 2)
             {
-
+                Resta restar = new Resta();
             }
             if (select == 3)
             {

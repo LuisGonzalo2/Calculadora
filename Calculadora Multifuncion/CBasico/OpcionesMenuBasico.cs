@@ -30,7 +30,7 @@ namespace Calculadora_Multifuncion
             }
             if (select == 4)
             {
-
+                Division dividir = new Division();
             }
             else if (select >= 5 || select <= 0)
             {

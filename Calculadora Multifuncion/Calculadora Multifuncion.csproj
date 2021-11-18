@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CBasico\Division.cs" />
     <Compile Include="CBasico\Multiplicacion.cs" />
     <Compile Include="CBasico\OpcionesMenuBasico.cs" />
     <Compile Include="CBasico\PedirOperarValoresBasicos.cs" />

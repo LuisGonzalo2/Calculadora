@@ -50,5 +50,26 @@ namespace Calculadora_Multifuncion
             multiplica = num1 * num2;
             return multiplica;
         }
+        public double dividir()
+        {
+            double divide = 0;
+            mensajepedir1();
+            String valor = Console.ReadLine();
+            double num1 = double.Parse(valor);
+            mensajepedir2();
+            String valor2 = Console.ReadLine();
+            double num2 = double.Parse(valor2);
+
+
+            if (num2 != 0)
+            {
+                divide = num1 / num2;
+            }
+            else
+            {
+                errornumero();
+            }
+            return divide;
+        }
     }
 }

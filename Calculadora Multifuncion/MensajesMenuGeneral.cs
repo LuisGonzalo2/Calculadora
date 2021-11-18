@@ -33,7 +33,10 @@ namespace Calculadora_Multifuncion
             Console.WriteLine("*************************");
             Console.WriteLine("Ingresa el segundo numero");
         }
-
+        public void errornumero()
+        {
+            Console.WriteLine("No se puede dividir entre 0");
+        }
         //General
         public void erroropcion()
         {

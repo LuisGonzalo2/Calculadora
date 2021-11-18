@@ -10,7 +10,11 @@ namespace Calculadora_Multifuncion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Texto de ejemplo");
+            MensajesMenuGeneral mostrar = new MensajesMenuGeneral();
+            mostrar.menuBasico();
+            OpcionesMenuBasico elejir = new OpcionesMenuBasico();
+            elejir.Opcion();
+            Console.ReadKey();
         }
     }
 }

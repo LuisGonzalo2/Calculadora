@@ -73,5 +73,14 @@ namespace Calculadora_Multifuncion
             Console.WriteLine("El valor total es " + valor);
             return "";
         }
+
+        //IVA
+        public void menuIva()
+        {
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Menu de Iva");
+            Console.WriteLine("Ingrese El valor Total");
+            Console.WriteLine("-----------------------------");
+        }
     }
 }

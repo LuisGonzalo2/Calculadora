@@ -49,10 +49,13 @@
     <Compile Include="CBasico\PedirOperarValoresBasicos.cs" />
     <Compile Include="CBasico\Resta.cs" />
     <Compile Include="CBasico\Suma.cs" />
+    <Compile Include="IvaOperacion.cs" />
+    <Compile Include="IvaPedirValor.cs" />
     <Compile Include="MensajesMenuGeneral.cs" />
     <Compile Include="Opciones.cs" />
-    <Compile Include="PorcentajeOperacion.cs" />
-    <Compile Include="PorcentajePedirValor.cs" />
+    <Compile Include="CPorcentaje\PorcentajeOperacion.cs" />
+    <Compile Include="CPorcentaje\PorcentajePedirValor.cs" />
+    <Compile Include="PedirValores.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

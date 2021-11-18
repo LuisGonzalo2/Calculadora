@@ -24,7 +24,7 @@ namespace Calculadora_Multifuncion
             if (opcion == 2)
             {
                 //Iva
-                
+                IvaOperacion valor = new IvaOperacion();
             }
             if (opcion == 3)
             {

@@ -10,6 +10,7 @@ namespace Calculadora_Multifuncion
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Texto de ejemplo");
         }
     }
 }

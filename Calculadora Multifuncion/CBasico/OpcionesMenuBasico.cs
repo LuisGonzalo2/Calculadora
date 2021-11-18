@@ -26,7 +26,7 @@ namespace Calculadora_Multifuncion
             }
             if (select == 3)
             {
-
+                Multiplicacion multiplicar = new Multiplicacion();
             }
             if (select == 4)
             {

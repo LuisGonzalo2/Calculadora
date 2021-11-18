@@ -38,5 +38,17 @@ namespace Calculadora_Multifuncion
             resta = num1 - num2;
             return resta;
         }
+        public double multiplicar()
+        {
+            double multiplica = 0;
+            mensajepedir1();
+            String valor = Console.ReadLine();
+            double num1 = double.Parse(valor);
+            mensajepedir2();
+            String valor2 = Console.ReadLine();
+            double num2 = double.Parse(valor2);
+            multiplica = num1 * num2;
+            return multiplica;
+        }
     }
 }

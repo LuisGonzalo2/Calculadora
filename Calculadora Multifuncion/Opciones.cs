@@ -19,7 +19,7 @@ namespace Calculadora_Multifuncion
             if (opcion == 1)
             {
                 //Radio
-                
+                RadioOperacion valor1 = new RadioOperacion();
             }
             if (opcion == 2)
             {

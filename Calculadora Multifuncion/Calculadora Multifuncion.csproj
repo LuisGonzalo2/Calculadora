@@ -49,8 +49,8 @@
     <Compile Include="CBasico\PedirOperarValoresBasicos.cs" />
     <Compile Include="CBasico\Resta.cs" />
     <Compile Include="CBasico\Suma.cs" />
-    <Compile Include="IvaOperacion.cs" />
-    <Compile Include="IvaPedirValor.cs" />
+    <Compile Include="CIva\IvaOperacion.cs" />
+    <Compile Include="CIva\IvaPedirValor.cs" />
     <Compile Include="MensajesMenuGeneral.cs" />
     <Compile Include="Opciones.cs" />
     <Compile Include="CPorcentaje\PorcentajeOperacion.cs" />
@@ -58,6 +58,8 @@
     <Compile Include="PedirValores.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CRadio\RadioOperacion.cs" />
+    <Compile Include="CRadio\RadioPedirValor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

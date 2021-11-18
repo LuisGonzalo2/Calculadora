@@ -82,5 +82,14 @@ namespace Calculadora_Multifuncion
             Console.WriteLine("Ingrese El valor Total");
             Console.WriteLine("-----------------------------");
         }
+
+        //Radio
+        public void menuRadio()
+        {
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine("Menu de Radio");
+            Console.WriteLine("Ingrese los centimentros");
+            Console.WriteLine("-----------------------------");
+        }
     }
 }

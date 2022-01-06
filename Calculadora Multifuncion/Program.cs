@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaLogica;
 
 namespace Calculadora_Multifuncion
 {
@@ -10,11 +11,6 @@ namespace Calculadora_Multifuncion
     {
         static void Main(string[] args)
         {
-            MensajesMenuGeneral mostrar = new MensajesMenuGeneral();
-            mostrar.generalmenu();
-            Opciones elejir = new Opciones();
-            elejir.pedirOpcion();
-            Console.ReadKey();
         }
     }
 }

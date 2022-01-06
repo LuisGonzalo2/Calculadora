@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace CapaLogica
 {
-    class Suma
+    //Strategy que implementa de la interfaz IOperacion
+    public class Suma : IOperacion
     {
+        public double Calcular(double num1, double num2)
+        {
+            return num1 + num2;
+        }
+
     }
 }

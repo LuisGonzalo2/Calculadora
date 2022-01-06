@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Division.cs" />
     <Compile Include="Iva.cs" />
+    <Compile Include="Multiplicacion.cs" />
     <Compile Include="Porcentaje.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radio.cs" />
+    <Compile Include="Resta.cs" />
+    <Compile Include="Suma.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

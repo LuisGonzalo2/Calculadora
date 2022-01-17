@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos.cs" />
     <Compile Include="Division.cs" />
     <Compile Include="IOperacion.cs" />
     <Compile Include="Iva.cs" />

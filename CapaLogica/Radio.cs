@@ -20,7 +20,13 @@ namespace CapaLogica
         //Metodo para obtener El radio
         public decimal SacarRadio()
         {
-            return Numero / (2 * Convert.ToDecimal(Pi));
+            //Definimos los parametros, en este caso recibe dos parametros y devuelve solo uno
+            //luego creamos un nombre, y ponemos los parametros que recibe
+            //seguidamente hacemos la operacion que en este caso es una division con multiplicacion
+            Func<decimal, double, decimal> radio = (numero, pi) => numero / (2 * Convert.ToDecimal(Pi));
+
+            
+            return radio(Numero, Pi);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 namespace CapaLogica
 {
     public class Porcentaje
@@ -19,7 +19,12 @@ namespace CapaLogica
         //Metodo para obtener el porcentaje
         public decimal SacarElPorcentaje()
         {
-            return (Numero * NumeroPorcentaje) / 100;
+            //Definimos los parametros, en este caso recibe dos parametros y devuelve solo uno
+            //luego creamos un nombre, y ponemos los parametros que recibe
+            //seguidamente hacemos la operacion que en este caso es una multiplicacion y una division
+            Func<decimal, decimal, decimal> porcentaje = (num1, num2) => (num1 * num2) / 100;
+            
+            return porcentaje(Numero, NumeroPorcentaje);
         }
 
     }

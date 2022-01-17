@@ -15,20 +15,17 @@ namespace CapaLogica
             return num1 / num2;
         }
         //Metodo para validar la division
-        public Boolean validar(double numeroUno, double numeroDos)
-        {
-            //Aqui validamos los numeros que sean mayor a 0
-            Boolean validacion = true;
-            if (numeroUno > 0 && numeroDos > 0)
-            {
-                validacion = true;
-            }
-            else
-            {
-                validacion = false;
-            }
 
-            return validacion;
+        public bool validar(double numeroUno, double numeroDos)
+        {
+            //Definimos los parametros, en este caso recibe dos parametros y devuelve solo uno
+            //luego creamos un nombre, y ponemos los parametros que recibe
+            //seguidamente hacemos la operacion que en este caso evaluamos y devolvemos un valor bool
+            //nos ahorramos el poner el if para evaluar si en una division existen numeros a dividir que sean 0
+            Func<double, double, bool> evaluar = (num1, num2) => num1 > 0 && num2 > 0;
+          
+            return evaluar(numeroUno, numeroDos);
+
         }
 
     }

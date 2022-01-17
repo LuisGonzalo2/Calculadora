@@ -11,5 +11,6 @@ namespace CapaLogica
     {
         //recordar que en las Interfaces puedo recibir
         double Calcular(double num1, double num2);
+
     }
 }

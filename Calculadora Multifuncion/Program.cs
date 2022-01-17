@@ -8,6 +8,7 @@ namespace Calculadora_Multifuncion
         {
             //Variables
             int opcion = 0;
+            double valor2 = 0;
             double numero1 = 0;
             double numero2 = 0;
             double resultado = 0;
@@ -21,10 +22,9 @@ namespace Calculadora_Multifuncion
 
 
 
-
             //Variable operacion que referencia al algoritmo
             //Se instancia un default para que se pueda compilar sin ningun problema
-            IOperacion operacion = new Suma();
+            IOperacion operacion = new Resta();
 
 
             do
@@ -47,21 +47,23 @@ namespace Calculadora_Multifuncion
                 {
                     do
                     {
-                        //Mensajes para pedir valores
-                        Console.WriteLine("------------------------");
-                        Console.WriteLine("Ingrese el primer numero");
-                        numero1 = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("------------------------");
-                        Console.WriteLine("Ingrese el segundo numero");
-                        numero2 = Convert.ToDouble(Console.ReadLine());
-                        //Se instacia
-                        operacion = new Suma();
-                        //se guarda en una variable el resultado
-                        resultado = operacion.Calcular(numero1, numero2);
-                        Console.WriteLine("El resultado de la operaciones {0}", resultado);
+                        //Intacia de la clase
+                        Suma suma = new Suma();
+                        Console.WriteLine("Ingrese cuantos numeros va a sumar");
+                        //variable que guarda el valor ingresado
+                        valor2 = double.Parse(Console.ReadLine());
+                        //ciclo para agregar valores a la lista
+                        for (int i = 0; i < valor2; i++)
+                        {
+                            Console.WriteLine("Ingrese el valor a Sumar ");
+                            numero1 = double.Parse(Console.ReadLine());
+                            suma.agregar(numero1);
+                        }
+                        Console.WriteLine("El resultado de la operaciones es {0}", suma.Sumar());
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
+
                         //verifica la respuesta, si no cicla
                     } while (respuesta.Equals("S"));
                 }
@@ -92,18 +94,19 @@ namespace Calculadora_Multifuncion
                 {
                     do
                     {
-                        //Mensajes para pedir valores
-                        Console.WriteLine("------------------------");
-                        Console.WriteLine("Ingrese el primer numero");
-                        numero1 = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("------------------------");
-                        Console.WriteLine("Ingrese el segundo numero");
-                        numero2 = Convert.ToDouble(Console.ReadLine());
-                        //Se instancia
-                        operacion = new Multiplicacion();
-                        //Se guarda el valor en una variable
-                        resultado = operacion.Calcular(numero1, numero2);
-                        Console.WriteLine("El resultado de la operaciones {0}", resultado);
+                        //Intacia de la clase
+                        Multiplicacion multi = new Multiplicacion();
+                        Console.WriteLine("Ingrese cuantos numeros va a multiplicar");
+                        //variable que guarda el valor ingresado
+                        valor2 = double.Parse(Console.ReadLine());
+                        //ciclo para agregar valores a la lista
+                        for (int i = 0; i < valor2; i++)
+                        {
+                            Console.WriteLine("Ingrese el valor a multiplicar ");
+                            numero1 = double.Parse(Console.ReadLine());
+                            multi.agregar(numero1);
+                        }
+                        Console.WriteLine("El resultado de la operaciones es {0}", multi.multiplicar());
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
@@ -127,7 +130,7 @@ namespace Calculadora_Multifuncion
                         //Se instancia
                         Division div = new Division();
                         //validamos si no contiene un 0 
-                        Boolean validacion = div.validar(numero1, numero2);
+                        bool validacion = div.validar(numero1, numero2);
 
                         //verificamos los numero ingresado
                         if (validacion == true)

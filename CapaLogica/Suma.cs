@@ -6,14 +6,31 @@ using System.Threading.Tasks;
 
 namespace CapaLogica
 {
-    //Strategy que implementa de la interfaz IOperacion
-    public class Suma : IOperacion
+    //Hereda metodos y propiedades de la clase Datos
+    public class Suma : Datos
     {
-        //Metodo para obtener la Suma
-        public double Calcular(double num1, double num2)
+        
+        public Suma()
         {
-            return num1 + num2;
+            numeros = new List<double>();
+
         }
+        public double Sumar()
+        {
+            double resultado = 0;
+            //Todo lo que se haga en la expresion, se guardara en la variable ya creada resultado
+            //Se coloca la coleccion de datos en este caso llamado numeros
+            //seguidamente separada por un pinto el metodo Aggregate
+            //requerimos un valor para un parametro de entrada llamado acumulador en este caso
+            //el siguiente parametro es el numero, en este caso se llama item
+            //y hacemos la operacion, seria como cualquier ciclo con acumulador, un while un foreach etc
+            //nos ahorramos lineas de codigo y sumamos perfectamente
+            resultado = this.numeros.Aggregate((acumulador, item) => acumulador += item);
+
+            return resultado;
+
+        }
+
 
     }
 }

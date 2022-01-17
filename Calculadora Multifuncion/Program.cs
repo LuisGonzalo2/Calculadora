@@ -18,7 +18,7 @@ namespace Calculadora_Multifuncion
             double pi = 3.14;
 
             //Mensaje de titulo
-            Console.WriteLine("Menu de Calculadora");
+            Console.WriteLine("\t\t *Menu de Calculadora *");
 
 
 
@@ -30,9 +30,9 @@ namespace Calculadora_Multifuncion
             do
             {
                 //Mensaje de menu
-                Console.WriteLine("-----------------------------------------------------");
-                Console.WriteLine("Ingrese alguna de las siguientes opciones: \n1-Suma \n2-Resta \n3-Multiplicar \n4-Divir \n5-Iva \n6-Porcentaje \n7-Radio \n8-Salir");
-                Console.WriteLine("-----------------------------------------------------");
+                Console.WriteLine("-------------------------------------------------------");
+                Console.WriteLine("Ingrese la opcion de la operacion que desees calclular: \n1-Suma \n2-Resta \n3-Multiplicar \n4-Divir \n5-Iva \n6-Porcentaje \n7-Radio \n8-Salir");
+                Console.WriteLine("-------------------------------------------------------");
                 //variable que guarda la opcion escogida por el usuario
                 opcion = Convert.ToInt16(Console.ReadLine());
                 //opcion a terminar el programa
@@ -59,7 +59,9 @@ namespace Calculadora_Multifuncion
                             numero1 = double.Parse(Console.ReadLine());
                             suma.agregar(numero1);
                         }
-                        Console.WriteLine("El resultado de la operaciones es {0}", suma.Sumar());
+                        Console.WriteLine("---------------------------------------");
+                        Console.WriteLine("El resultado de la operacion es {0}", suma.Sumar());
+                        Console.WriteLine("---------------------------------------");
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
@@ -83,7 +85,9 @@ namespace Calculadora_Multifuncion
                         operacion = new Resta();
                         //Se guarda en una variable el resultado
                         resultado = operacion.Calcular(numero1, numero2);
-                        Console.WriteLine("El resultado de la operaciones {0}", resultado);
+                        Console.WriteLine("---------------------------------------");
+                        Console.WriteLine("El resultado de la operacion {0}", resultado);
+                        Console.WriteLine("---------------------------------------");
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
@@ -106,7 +110,9 @@ namespace Calculadora_Multifuncion
                             numero1 = double.Parse(Console.ReadLine());
                             multi.agregar(numero1);
                         }
-                        Console.WriteLine("El resultado de la operaciones es {0}", multi.multiplicar());
+                        Console.WriteLine("---------------------------------------");
+                        Console.WriteLine("El resultado de la operacion es {0}", multi.multiplicar());
+                        Console.WriteLine("---------------------------------------");
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
@@ -137,7 +143,9 @@ namespace Calculadora_Multifuncion
                         {
                             //Se guarda el resultado en una variable
                             resultado = operacion.Calcular(numero1, numero2);
-                            Console.WriteLine("El resultado de la operaciones {0}", resultado);
+                            Console.WriteLine("---------------------------------------");
+                            Console.WriteLine("El resultado de la operacion {0}", resultado);
+                            Console.WriteLine("---------------------------------------");
                             Console.WriteLine(pregunta);
                             respuesta = Console.ReadLine();
                             Console.Clear();
@@ -188,7 +196,9 @@ namespace Calculadora_Multifuncion
                         decimal Numeroporcentaje = decimal.Parse(Console.ReadLine());
                         //Se instancia
                         Porcentaje verPorcentaje = new Porcentaje(valor, Numeroporcentaje);
+                        Console.WriteLine("---------------------------------------");
                         Console.WriteLine("El " + Numeroporcentaje + "% de " + valor + " es: " + verPorcentaje.SacarElPorcentaje());
+                        Console.WriteLine("---------------------------------------");
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
@@ -206,7 +216,9 @@ namespace Calculadora_Multifuncion
                         decimal valor = decimal.Parse(Console.ReadLine());
                         //Se instancia
                         Radio sacarRadio = new Radio(valor, pi);
+                        Console.WriteLine("-----------------------------");
                         Console.WriteLine("La circunferencia es: " + valor + "\nEl Radio es: " + sacarRadio.SacarRadio());
+                        Console.WriteLine("-----------------------------");
                         Console.WriteLine(pregunta);
                         respuesta = Console.ReadLine();
                         Console.Clear();
